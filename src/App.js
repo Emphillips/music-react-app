@@ -2,8 +2,8 @@ import React, {Component} from "react";
 import NavBar from './Component/NavBar/NavBar';
 import LogIn from './Component/Login/Login';
 import Dashboard from './Component/Dashboard/Dashboard';
-
-
+import LoginButton from './Component/Login/Button';
+import UserForm from './Component/Login/Form';
 
 class App extends Component {
   state = {
@@ -15,9 +15,12 @@ class App extends Component {
     return (
       <div>
         <NavBar/>
+        <UserForm />
+        <LoginButton />
         { this.state.logIn ? <Dashboard /> : (
-          <LogIn/>
+          <LogIn/> 
         )}
+        
       </div>
     );
   }

@@ -1,12 +1,22 @@
-.cardView{
+.cardBox {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+
+.loginBox {
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
 
-
-.loginBox{
+.button {
   display: flex;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: center;
+}
+
+.userForm {
+  display: flex;
+  justify-content: center;
 }
