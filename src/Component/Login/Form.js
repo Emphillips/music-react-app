@@ -1,27 +1,26 @@
 import React from 'react';
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
 
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      '& > *': {
+        margin: theme.spacing(1),
+        width: 200,
+        
+      },
+    },
+  }),
+);
 
+export default function UserForm() {
+  const classes = useStyles();
 
-class Form extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { username: '' }
-  }
-
-  handleChange(event) {}
-
-  render() {
-    return (
-      <form className="userForm">
-        Username:
-        <input
-          type="text"
-          value={this.state.username}
-          onChange={this.handleChange}
-        />
-      </form>
-    )
-  }
+  return (
+    <form className={classes.root} noValidate autoComplete="off">
+      <TextField id="standard-basic" label="Username" />
+      
+    </form>
+  );
 }
-
-export default Form;
