@@ -1,16 +1,31 @@
 import React from 'react';
+import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
-const LoginButton = () => {
+// const LoginButton = () => {
+
+  const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    margin: {
+      margin: theme.spacing(1),
+      width: 200,
+    },
+  }),
+);
+
+export default function ButtonSizes() {
+  const classes = useStyles();
+
   return (
       <div className="button">
-        <Button variant="contained" color="primary" disableElevation>
+        <Button size="large" variant="contained" color="primary" className={classes.margin}> 
       Login
     </Button>
-        
+    {/* <Fab variant="extended" color="primary" aria-label="add" className={classes.margin}>
+          Extended
+        </Fab> */}
 
-      </div>
+      </div> 
     );
   }
 
-  export default LoginButton;

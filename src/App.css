@@ -1,8 +1,4 @@
-.cardBox {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-}
+
 
 
 .loginBox {
@@ -19,4 +15,21 @@
 .userForm {
   display: flex;
   justify-content: center;
+}
+
+.cardBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch {
+  display: flex;
+  justify-content: left;
+  
+}
+
+.dropSelect {
+  display: flex;
+  justify-content: left;
 }

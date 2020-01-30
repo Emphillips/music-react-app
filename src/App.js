@@ -4,10 +4,11 @@ import LogIn from './Component/Login/Login';
 import Dashboard from './Component/Dashboard/Dashboard';
 import LoginButton from './Component/Login/Button';
 import UserForm from './Component/Login/Form';
+import UserFormPW from './Component/Login/FormPW';
 
 class App extends Component {
   state = {
-    logIn: false,
+    logIn: true,
   }
 
   
@@ -16,6 +17,7 @@ class App extends Component {
       <div>
         <NavBar/>
         <UserForm />
+        <UserFormPW />
         <LoginButton />
         { this.state.logIn ? <Dashboard /> : (
           <LogIn/> 
