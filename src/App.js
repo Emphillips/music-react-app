@@ -1,26 +1,27 @@
 import React, {Component} from "react";
-import AppBar from './Component/ButtonAppBar/AppBar';
-import Dashboard from './Component/Dashboard/Dashboard'
-import './App.css';
-
+import NavBar from './Component/NavBar/NavBar';
+import LogIn from './Component/Login/Login';
+import Dashboard from './Component/Dashboard/Dashboard';
 
 
 
 class App extends Component {
+  state = {
+    logIn: true
+  }
+
   
   render() {
     return (
       <div>
-        <AppBar position="static">
-        </AppBar>
+        <NavBar/>
+        { this.state.logIn ? <Dashboard /> : (
+          <LogIn/>
+        )}
       </div>
-      <div>
-        <useStyles 
-      </div>
-      
-    )
+    );
   }
-} 
+}
 
 
 export default App;

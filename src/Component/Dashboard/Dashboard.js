@@ -1,33 +1,25 @@
-iimport React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import React from "react";
+import OnlineCard from '../SimpleCard/OnlineCard';
+import VolumeCard from '../SimpleCard/VolumeCard';
+import QualityCard from '../SimpleCard/QualityCard';
+import "../../App.css";
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    '& > *': {
-      margin: theme.spacing(1),
-    },
-  },
-}));
-
-export default function ContainedButtons() {
-  const classes = useStyles();
-
+const Dashboard = () => {
   return (
-    <div className={classes.root}>
-      <Button variant="contained">Default</Button>
-      <Button variant="contained" color="primary">
-        Primary
-      </Button>
-      <Button variant="contained" color="secondary">
-        Secondary
-      </Button>
-      <Button variant="contained" disabled>
-        Disabled
-      </Button>
-      <Button variant="contained" color="primary" href="#contained-buttons">
-        Link
-      </Button>
-    </div>
-  );
-}
+      <div className="cardBox">
+        <OnlineCard />
+        <VolumeCard />
+        <QualityCard />
+        <h3>Test Test</h3>
+
+      </div>
+    );
+  }
+
+  export default Dashboard;
+
+
+
+  
+
+
