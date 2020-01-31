@@ -31,20 +31,23 @@ const useStyles = makeStyles(theme => ({
 
 const OnlineCard = () => {
   const classes = useStyles();
+
   return (
+    <div className="cardStack">
     <Card className={classes.root} width="200px">
       <CardContent>
-        <Typography variant="h4" align="center">
+        <Typography variant="h4" align="left">
           Online Mode
         </Typography>
         <div className={classes.list}>
           <Typography align="center">Is this application connected to the internet?</Typography>
         </div>
       </CardContent>
-      <div className="switch">
+      <div className={classes.list}>
       <Switch />
       </div>
     </Card>
+    </div>
   );
 };
 

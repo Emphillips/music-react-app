@@ -31,17 +31,18 @@ const useStyles = makeStyles(theme => ({
 
 const QualityCard = () => {
   const classes = useStyles();
+  
   return (
     <Card className={classes.root} width="200px">
       <CardContent>
         <Typography variant="h4" align="center">
-          Online Mode
+          Sound Quality
         </Typography>
         <div className={classes.list}>
           <Typography align="center">Is this application connected to the internet?</Typography>
         </div>
       </CardContent>
-      <div className="dropSelect">
+      <div className={classes.list}>
       <DropSelect />
       </div>
     </Card>

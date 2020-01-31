@@ -1,5 +1,9 @@
 
-
+.mainForm {
+  width: 75vw;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .loginBox {
   display: flex;
@@ -23,7 +27,7 @@
   align-items: center;
 }
 
-.switch {
+/* .switch {
   display: flex;
   justify-content: left;
   
@@ -33,3 +37,15 @@
   display: flex;
   justify-content: left;
 }
+
+.slider {
+  display: flex;
+  justify-content: center;
+} */
+
+/* .cardStack {
+  display: flex;
+
+} */
+
+

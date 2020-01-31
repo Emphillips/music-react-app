@@ -21,9 +21,7 @@ export default function ButtonSizes() {
         <Button size="large" variant="contained" color="primary" className={classes.margin}> 
       Login
     </Button>
-    {/* <Fab variant="extended" color="primary" aria-label="add" className={classes.margin}>
-          Extended
-        </Fab> */}
+    
 
       </div> 
     );
